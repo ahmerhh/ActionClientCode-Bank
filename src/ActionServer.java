@@ -35,7 +35,6 @@ public class ActionServer {
       new ActionServerThread(ActionServerSocket.accept(), "ActionServerThread1", ourSharedActionStateObject).start();
       new ActionServerThread(ActionServerSocket.accept(), "ActionServerThread2", ourSharedActionStateObject).start();
       new ActionServerThread(ActionServerSocket.accept(), "ActionServerThread3", ourSharedActionStateObject).start();
-      new ActionServerThread(ActionServerSocket.accept(), "ActionServerThread4", ourSharedActionStateObject).start();
       System.out.println("New " + ActionServerName + " thread started.");
     }
     ActionServerSocket.close();
